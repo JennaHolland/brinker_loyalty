@@ -21,7 +21,7 @@ class User
     /**
      * @var Collection<int, Loyalty>
      */
-    #[ORM\ManyToMany(targetEntity: Loyalty::class, mappedBy: 'users')]
+    #[ORM\ManyToOne(targetEntity: Loyalty::class, mappedBy: 'users')]
     private Collection $no;
 
     public function __construct()
