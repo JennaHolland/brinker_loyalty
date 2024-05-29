@@ -10,7 +10,7 @@ use Symfony\Component\Routing\Attribute\Route;
 
 class LoyaltyComtrollerController extends AbstractController
 {
-    #[Route('/loyalty1', name: 'app_loyalty1')]
+    #[Route('/loyalty', name: 'app_loyalty')]
 
     public function index(): Response
     {

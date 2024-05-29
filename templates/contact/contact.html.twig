@@ -1,0 +1,59 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello{% endblock %}
+
+{% block body %}
+<style>
+    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
+    .example-wrapper code { background: #f5f5f5; padding: 2px 6px; }
+</style>
+</br>
+<div class="example-wrapper">
+   </br></br></br>
+    <span class="text-2xl font-extrabold">How Can We Help?<span></br></br>
+    <img src="{{ asset('images/image455.jpg') }}" alt="Rewards">
+   </br>
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Contact us</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="mb-3">
+                        <label for="recipient-name" class="col-form-label">First_Name</label>
+                        <input type="text" class="form-control" id="recipient-firstname">
+                    </div>
+                    <div class="mb-3">
+                        <label for="recipient-email" class="col-form-label">Last_Name:</label>
+                        <input type="text" class="form-control" id="recipient-lastname">
+                    </div>
+                    <div class="mb-3">
+                        <label for="recipient-subject" class="col-form-label">Email:</label>
+                        <input type="text" class="form-control" id="recipient-email">
+                    </div>
+                    <div class="mb-3">
+                        <label for="message-text" class="col-form-label">Inquiry_Description:</label>
+                        <textarea class="form-control" id="message-text"></textarea>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Send message</button>
+            </div>
+        </div>
+    </div>
+</div>
+    
+</br>
+<span class="text-2xl">Sign-up or login for Loyalty Rewards</span></br></br>
+
+<a href="/login"
+  class="px-6 py-3 text-blue-100 no-underline bg-blue-500 rounded hover:bg-blue-600 hover:underline hover:text-blue-200"style="background-color: #000038">LOGIN</a>
+<a href="/login"
+  class="px-6 py-3 text-blue-100 no-underline rounded  hover:bg-blue-600 hover:underline hover:text-blue-200" style="background-color: #77951e">SIGNUP</a>
+</div>
+{% endblock %}

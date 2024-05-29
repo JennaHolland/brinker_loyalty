@@ -11,10 +11,10 @@
             {% block header %}
                 <header>
                     <nav
-                            class="flex items-center justify-between flex-wrap p-6 fixed w-full z-10 top-0"
+                            class="flex items-center justify-between flex-wrap p-6 fixed w-full z-10 top-0" style="background-color: #000038"
                             x-data="{ isOpen: false }"
                             @keydown.escape="isOpen = false"
-                            :class="{ 'shadow-lg bg-gray-600' : isOpen , 'bg-gray-600' : !isOpen}">
+                            :class="{ 'shadow-lg bg-gray-600' : isOpen , 'bg-blue-900' : !isOpen}">
 
                         <div class="flex items-center flex-shrink-0 text-white mr-6">
                             <a
@@ -58,11 +58,11 @@
                                 @click.away="isOpen = false"
                                 x-show.transition="true">
 
-                            <ul class="pt-6 lg:pt-0 list-reset lg:flex justify-end flex-1 items-center">
+                            <ul class="pt-6 lg:pt-0 list-reset lg:flex justify-start flex-1 items-center">
                                 <li class="mr-3">
                                     <a
                                             class="inline-block text-gray-300 no-underline hover:text-gray-200 hover:text-underline py-2 px-4"
-                                            href="/"
+                                            href="/loyalty"
                                             @click="isOpen = false">
                                         Home
                                     </a>
@@ -80,7 +80,7 @@
                                 <li class="mr-3">
                                     <a
                                             class="inline-block text-gray-300 no-underline hover:text-gray-200 hover:text-underline py-2 px-4"
-                                            href="/contact"
+                                            href="/create-contact"
                                             @click="isOpen = false">
                                         Contact
                                     </a>
@@ -103,9 +103,9 @@
             {% block body %}{% endblock %}
 
             {% block footer %}
-                <footer class="bg-gray-600 py-6 mt-20">
+                <footer class="bg-blue-900 py-6 mt-20" style="background-color: #000038">
                     <p class="w-25 w-4/5 text-center pb-3 m-auto text-base text-gray-100 pt-6">
-                        Copyright Loyalty Rewards. All Rights Reserved
+                        ®Copyright Loyalty Rewards. All Rights Reserved
                     </p>
                 </footer>
             {% endblock %}
