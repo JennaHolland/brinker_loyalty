@@ -15,8 +15,13 @@
     {% endif %}
 
     <div class="w-4/5 m-auto text-center">
-        <div class="py-12 border-b border-gray-200">
-            <h1 class="text-6xl pt-12 pb-8">
+        <div class="py-2 border-b border-gray-200">
+         <div>
+    <img src="{{ asset('images/chilis321.jpg') }}" class="mx-auto" style="text-align: center; padding-top:150px; padding-bottom: -20px" alt="Rewards" width="300px" height="auto">
+    </div>
+    <div class="w-4/5 m-auto text-center">
+        <div class="py-2 border-b border-gray-200">
+            <h1 class="text-4xl">
                 Login
             </h1>
     
@@ -48,7 +53,7 @@
                 value="{{ csrf_token('authenticate') }}"
             >
             <button 
-                class="uppercase mt-15 text-gray-100 text-lg w-1/5 mt-10 font-extrabold py-4 px-8 rounded-3xl" style="background-color: #77951e"
+                class="uppercase mt-15 bg-blue-500 text-gray-100 text-lg w-1/5 mt-10 font-extrabold py-4 px-8 rounded-3xl" style="background-color: #77951e"
                 type="submit">
                 Sign in
             </button>
