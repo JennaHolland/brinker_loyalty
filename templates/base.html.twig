@@ -94,6 +94,15 @@ fetch('https://api.tomorrow.io/v4?apikey=pL8H9d0wCnY94FbNWW9h9Kd8cYiR6JwK', opti
                                     </a>
                                 </li>
 
+                                 <li class="mr-3">
+                                    <a
+                                            class="inline-block text-gray-300 no-underline hover:text-gray-200 hover:text-underline py-2 px-4"
+                                            href="/weather"
+                                            @click="isOpen = false">
+                                        Weather
+                                    </a>
+                                </li>
+
                                 <li class="mr-3">
                                     <a
                                         class="inline-block text-gray-300 no-underline hover:text-gray-200 hover:text-underline py-2 px-4"
@@ -101,7 +110,8 @@ fetch('https://api.tomorrow.io/v4?apikey=pL8H9d0wCnY94FbNWW9h9Kd8cYiR6JwK', opti
                                         @click="isOpen = false">
                                         {{ app.user ? 'Logout' : 'Login' }}
                                     </a>
-                                </li>                                
+                                </li> 
+                                                               
                             </ul>
                         </div>
                     </nav>
@@ -111,7 +121,7 @@ fetch('https://api.tomorrow.io/v4?apikey=pL8H9d0wCnY94FbNWW9h9Kd8cYiR6JwK', opti
             {% block body %}{% endblock %}
 
             {% block footer %}
-                <footer class="bg-blue-900 py-6 mt-20" style="background-color: #000038">
+                <footer class="bg-blue-900 py-6 mt-20" style="background-color: #000038; position: fixed; left: 0; bottom: 0; right: 0; max-width: 100% ">
                     <p class="w-25 w-4/5 text-center pb-3 m-auto text-base text-gray-100 pt-6">
                         ®Copyright Loyalty Rewards. All Rights Reserved
                     </p>
